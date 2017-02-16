@@ -1,0 +1,29 @@
+<div ng-controller="checkOutCtrl" ng-hide="payList.lenght == 0">
+    <table class="layui-table">
+        <thead>
+            <tr>
+                <th>景点</th>
+                <th>单价</th>
+                <th>数量</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="item in payList">
+                <td>{{item.name}}</td>
+                <td>{{item.price | currency}}</td>
+                <td>{{item.count}}</td>
+                <td><button ng-click="remove(item.productId)" class="layui-btn layui-btn-danger">删除</button></td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="navbar-right">
+        <div class="navbar-text">
+          <b>你的购票清单共有：</b>
+          <span ng-bind="itemCount()"></span> 类门票，共计：
+          <span ng-bind="total() | currency"></span>
+        </div>
+        <button ui-sref="app.product" href="#app/product/product.html" class="layui-btn layui-btn-normal">返回</button>
+        <button class="layui-btn layui-btn-normal">付款</button>
+    </div>
+  </div>
