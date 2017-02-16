@@ -8,10 +8,10 @@ myAngularDemo.AppModule
                     for (var i = 0; i < payList.length; i++) {
                         if (payList[i].productId === item.productId) {
                             payList[i].count--;
+                            item.count = payList[i].count;
                             break;
                         }
                     }
-                    item.count--;
                 } else if (item.count > 0) {
                     for (var i = 0; i < payList.length; i++) {
                         if (payList[i].productId === item.productId) {
