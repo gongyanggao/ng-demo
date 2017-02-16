@@ -1,0 +1,47 @@
+<style type="text/css">
+  .submit-btn{
+    float: right;
+    margin-top: 15px;
+  }
+  span{
+    margin: 0 5px;
+  }
+</style>
+<div ng-controller="productCtrl">
+	<table class="layui-table">
+		<colgroup>
+          <col width="150">
+          <col width="150">
+          <col width="80">
+          <col width="130">
+          <col width="120">
+      </colgroup>
+      <thead>
+          <tr>
+              <th>名称</th>
+              <th>简介</th>
+              <th>票价</th>
+              <th>总价</th>
+              <th>详细</th>
+              <th>订票</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr ng-repeat="item in datas">
+          	<td>{{item.name}}</td>
+          	<td>{{item.introduction}}</td>
+          	<td>{{item.price | currency}}</td>
+            <td>{{item.price*item.count | currency}}</td>
+          	<td><button ui-sref=".detail({productId: item.productId})" data-id={{item.productId}} class="layui-btn layui-btn-normal">详细</button></td>
+            <td>
+                <button ng-click="minus(item)" class="layui-btn layui-btn-small">-</button>
+                <span ng-bind="item.count"></span>
+                <button ng-click="plus(item)" class="layui-btn layui-btn-small">+</button>
+            </td>
+          </tr>
+      </tbody>
+	</table>
+  <div>
+      <button ng-disabled="payList.length == 0" ui-sref=".checkout" class="layui-btn layui-btn-normal submit-btn">确定</button>
+  </div>
+</div>

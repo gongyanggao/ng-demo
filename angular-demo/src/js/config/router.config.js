@@ -14,7 +14,7 @@ var myAngularDemo;
                                 templateUrl: './tpl/app.html'
                             },
                             'app.content@app': {
-                                templateUrl: '/app/bigdata/bigdata.html',
+                                templateUrl: '/app/bigdata/views/bigdata.html',
                                 controller: 'bigDataCtrl'
                             }
                         }
@@ -23,7 +23,7 @@ var myAngularDemo;
                         url: '/product',
                         views:{
                             'app.content@app': {
-                                templateUrl: '/app/product/product.html',
+                                templateUrl: '/app/product/views/product.html',
                                 controller: 'productCtrl'
                             }
                         }
@@ -32,7 +32,7 @@ var myAngularDemo;
                         url: '/detail/:productId',
                         views:{
                             'app.content@app': {
-                                templateUrl: '/app/product/detail.html',
+                                templateUrl: '/app/product/views/detail.html',
                                 controller: 'productDetailCtrl'
                             }
                         }
@@ -41,7 +41,7 @@ var myAngularDemo;
                         url: '/checkout',
                         views:{
                             'app.content@app': {
-                                templateUrl: '/app/product/checkout.html',
+                                templateUrl: '/app/product/views/checkout.html',
                                 controller: 'checkOutCtrl'
                             }
                         }
@@ -50,7 +50,7 @@ var myAngularDemo;
                         url: '/payment',
                         views:{
                             'app.content@app': {
-                                templateUrl: '/app/product/payment.html',
+                                templateUrl: '/app/product/views/payment.html',
                                 controller: 'paymentCtrl'
                             }
                         }
@@ -59,7 +59,7 @@ var myAngularDemo;
                         url: '/bigData',
                         views:{
                             'app.content@app': {
-                                templateUrl: '/app/bigdata/bigdata.html',
+                                templateUrl: '/app/bigdata/views/bigdata.html',
                                 controller: 'bigDataCtrl'
                             }
                         }
@@ -68,7 +68,7 @@ var myAngularDemo;
                         url: '/web',
                         views:{
                             'app.content@app': {
-                                templateUrl: '/app/web/web.html',
+                                templateUrl: '/app/web/views/web.html',
                                 controller: 'webCtrl'
                             }
                         }
