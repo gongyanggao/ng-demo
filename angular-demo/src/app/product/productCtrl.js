@@ -7,8 +7,7 @@ myAngularDemo.AppModule.controller('productCtrl', ['$scope', 'instance', '$http'
 	$scope.plus = function(item) {
 		instance.countPlus(item);
 	};
-	var payList = [];
-
+	$scope.payList = instance.getPayList();
 	function getProducts() {
 		$http({
 			method: 'GET',
