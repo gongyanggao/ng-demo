@@ -1,0 +1,65 @@
+<style type="text/css">
+  .payment-form{
+    margin: 30px 0;
+  }
+  .payment-form label{
+    width: 120px !important;
+  }
+  .payment-form .layui-input-block{
+    width: 300px;
+    margin-left: 150px;
+  }
+</style>
+<form ng-controller="paymentCtrl" class="layui-form payment-form"> <!-- 提示：如果你不想用form，你可以换成div等任何一个普通元素 -->
+  <div class="layui-form-item">
+    <label class="layui-form-label">姓名</label>
+    <div class="layui-input-block">
+      <input type="text" name="" placeholder="请输入姓名" autocomplete="off" class="layui-input">
+    </div>
+  </div>
+  <div class="layui-form-item">
+    <label class="layui-form-label">手机号码</label>
+    <div class="layui-input-block">
+      <input type="number" name="" autocomplete="off" class="layui-input">
+    </div>
+  </div>
+  <div class="layui-form-item">
+    <label class="layui-form-label">选择购票城市</label>
+    <div class="layui-input-block">
+      <select name="interest" lay-filter="aihao">
+        <option value="0">北京</option>
+        <option value="1">上海</option>
+        <option value="2">武汉</option>
+        <option value="3">杭州</option>
+      </select>
+    </div>
+  </div>
+  <div class="layui-form-item">
+    <label class="layui-form-label">旅行服务</label>
+    <div class="layui-input-block">
+      <input type="checkbox" name="like[write]" title="住宿">
+      <input type="checkbox" name="like[read]" title="租车">
+    </div>
+  </div>
+  <div class="layui-form-item">
+    <label class="layui-form-label">旅行意外险</label>
+    <div class="layui-input-block">
+      <input type="checkbox" lay-skin="switch">
+    </div>
+  </div>
+  <div class="layui-form-item layui-form-text">
+    <label class="layui-form-label">备注</label>
+    <div class="layui-input-block">
+      <textarea placeholder="请输入内容" class="layui-textarea"></textarea>
+    </div>
+  </div>
+  <div class="layui-form-item">
+    <div class="layui-input-block">
+      <button ui-sref="app.product.checkout" class="layui-btn" lay-submit lay-filter="*">返回上一级</button>
+      <button class="layui-btn" lay-submit lay-filter="*">立即支付</button>
+      <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+    </div>
+  </div>
+  <!-- 更多表单结构排版请移步文档左侧【页面元素-表单】一项阅览 -->
+</form>
+<script src="/lib/layui/lay/modules/form.js"></script>
