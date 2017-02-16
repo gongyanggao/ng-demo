@@ -1,9 +1,20 @@
+<style type="text/css">
+  .submit-btn{
+    float: right;
+    margin-top: 15px;
+  }
+  span{
+    margin: 0 5px;
+  }
+</style>
 <div ng-controller="productCtrl">
 	<table class="layui-table">
 		<colgroup>
           <col width="150">
-          <col width="200">
-          <col>
+          <col width="150">
+          <col width="80">
+          <col width="130">
+          <col width="120">
       </colgroup>
       <thead>
           <tr>
@@ -31,6 +42,6 @@
       </tbody>
 	</table>
   <div>
-      <button ui-sref=".checkout" class="layui-btn layui-btn-normal">结算</button>
+      <button ng-disabled="payList.length == 0" ui-sref=".checkout" class="layui-btn layui-btn-normal submit-btn">确定</button>
   </div>
 </div>
