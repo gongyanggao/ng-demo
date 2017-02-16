@@ -46,6 +46,15 @@ var myAngularDemo;
                             }
                         }
                     })
+                    .state('app.product.checkout.payment', {
+                        url: '/payment',
+                        views:{
+                            'app.content@app': {
+                                templateUrl: '/app/product/payment.html',
+                                controller: 'paymentCtrl'
+                            }
+                        }
+                    })
                     .state('app.bigData', {
                         url: '/bigData',
                         views:{
