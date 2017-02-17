@@ -1,5 +1,5 @@
-var myAngularDemo;
-myAngularDemo.AppModule.controller('webCtrl', ['$scope', function ($scope) {
+var myNgDemo;
+myNgDemo.CtrlModule.controller('webCtrl', ['$scope', function ($scope) {
         'use strict';
         //TODO
     }]);
