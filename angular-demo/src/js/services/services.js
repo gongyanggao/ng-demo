@@ -1,11 +1,21 @@
 "use strict";
-myAngularDemo.AppModule
+myNgDemo.AppModule
     .factory('instance', function() {
         var payList = [];
         return {
+            reloadDatas: function(data) {
+                for (var i = data.length - 1; i >= 0; i--) {
+                    for (var j = payList.length - 1; j >= 0; j--) {
+                        if (payList[j].productId === data[i].productId) {
+                            data[i].count = payList[j].count;
+                            break;
+                        }
+                    }
+                }
+                return data;
+            },
             countMinus: function(item) {
-                //数量大于1则减1
-                if (item.count > 1) {
+                if (item.count > 1) {   //数量大于1则减1
                     for (var i = 0; i < payList.length; i++) {
                         if (payList[i].productId === item.productId) {
                             payList[i].count--;
@@ -13,8 +23,7 @@ myAngularDemo.AppModule
                             break;
                         }
                     }
-                    //等于1的时候减1再清空购物车中对应的条目
-                } else if (item.count > 0) {
+                } else if (item.count > 0) {    //等于1的时候减1再清空购物车中对应的条目
                     for (var i = 0; i < payList.length; i++) {
                         if (payList[i].productId === item.productId) {
                             payList.splice(i, 1);
@@ -24,13 +33,11 @@ myAngularDemo.AppModule
                     item.count--;
                 }
             },
-            //等于0的时候，数量加1，购物车添加条目
             countPlus: function(item) {
-                if (item.count == 0) {
+                if (item.count == 0) {  //等于0的时候，数量加1，购物车添加条目
                     item.count++;
                     payList.push(item);
-                    //大于0的时候，数量加1，购物车中对应条目+1
-                } else {
+                } else {    //大于0的时候，数量加1，购物车中对应条目+1
                     for (var i = 0; i < payList.length; i++) {
                         if (payList[i].productId === item.productId) {
                             payList[i].count++;
@@ -38,7 +45,6 @@ myAngularDemo.AppModule
                             break;
                         }
                     }
-                    // item.count++;
                 }
             },
             //移除购物车中的条目
@@ -58,13 +64,13 @@ myAngularDemo.AppModule
     /*
      * Ajax服务
      */
-    .service('ajaxService', ['$http', function($http) {
+    .service('ajaxService', ['$http', '$q', function($http, $q) {
         var _self = this;
-
-        _self.get = function(url, success) {
-            $http.get(url).success(function(data) {
-                success(data.data);
-            })
+        _self.get = function(url, callback) {
+            var deferred=$q.defer();
+            var promise = $http.get(url);
+            promise.then(function(data){
+                deferred.resolve(callback(data.data));
+            });
         };
-
     }]);
