@@ -1,7 +1,7 @@
-var myAngularDemo;
-!function (myAngularDemo) {
+var myNgDemo;
+!function (myNgDemo) {
 	'use strict';
-	myAngularDemo.AppModule.config(['$stateProvider', '$urlRouterProvider',
+	myNgDemo.AppModule.config(['$stateProvider', '$urlRouterProvider',
                 function ($stateProvider, $urlRouterProvider) {
                 	$urlRouterProvider
                             .otherwise("/app");
@@ -74,4 +74,4 @@ var myAngularDemo;
                         }
                     });
             }]);
-}(myAngularDemo || (myAngularDemo = {}));
+}(myNgDemo || (myNgDemo = {}));
