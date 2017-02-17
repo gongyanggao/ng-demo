@@ -1,8 +1,8 @@
-var myAngularDemo;
-!function (ng, ctrlModule) {
+var myNgDemo;
+!function (ng, CtrlModule) {
     "use strict";
     var myAngularDemo = function ($scope, $rootScope, $state) {
 
     };
-    ctrlModule.controller("MyAngularDemoAppCtrl", ["$scope", "$rootScope", "$state", myAngularDemo]);
-}(angular, myAngularDemo.CtrlModule);
+    CtrlModule.controller("MyAngularDemoAppCtrl", ["$scope", "$rootScope", "$state", myAngularDemo]);
+}(angular, myNgDemo.CtrlModule);
