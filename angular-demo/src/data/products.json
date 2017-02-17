@@ -1,7 +1,7 @@
 {
     "totalNum": 5,
     "data": [{
-        "productId":"1",
+        "productId": "1",
         "index": "1",
         "name": "云南丽江",
         "introduction": "旅游景区",
@@ -9,7 +9,7 @@
         "count": 0,
         "option": "详细"
     }, {
-        "productId":"2",
+        "productId": "2",
         "index": "2",
         "name": "云南大理",
         "introduction": "非常推荐去",
@@ -17,7 +17,7 @@
         "count": 0,
         "option": "详细"
     }, {
-        "productId":"3",
+        "productId": "3",
         "index": "3",
         "name": "海口三亚",
         "introduction": "四季如夏",
@@ -25,7 +25,7 @@
         "count": 0,
         "option": "详细"
     }, {
-        "productId":"4",
+        "productId": "4",
         "index": "4",
         "name": "安徽黄山",
         "introduction": "黄山七十二峰",
@@ -33,7 +33,7 @@
         "count": 0,
         "option": "详细"
     }, {
-        "productId":"5",
+        "productId": "5",
         "index": "5",
         "name": "四川九寨沟",
         "introduction": "人山人海",
