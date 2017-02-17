@@ -1,5 +1,5 @@
-var myAngularDemo;
-myAngularDemo.AppModule.controller('bigDataCtrl', ['$scope', function ($scope) {
+var myNgDemo;
+myNgDemo.CtrlModule.controller('bigDataCtrl', ['$scope', function ($scope) {
         'use strict';
         //TODO
     }]);
