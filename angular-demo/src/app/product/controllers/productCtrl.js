@@ -1,6 +1,6 @@
 'use strict';
-var myAngularDemo;
-myAngularDemo.AppModule.controller('productCtrl', ['$scope', 'instance', 'ajaxService',
+var myNgDemo;
+myNgDemo.CtrlModule.controller('productCtrl', ['$scope', 'instance', 'ajaxService',
 	function($scope, instance, ajaxService) {
 		$scope.minus = function(item) {
 			instance.countMinus(item);
@@ -10,16 +10,9 @@ myAngularDemo.AppModule.controller('productCtrl', ['$scope', 'instance', 'ajaxSe
 		};
 		$scope.payList = instance.getPayList();
 		ajaxService.get('../data/products.json', function(data) {
-			$scope.datas = data;
+			$scope.datas = data.data;
 			if (instance.getPayList().length > 0) {
-				for (var i = $scope.datas.length - 1; i >= 0; i--) {
-					for (var j = instance.getPayList().length - 1; j >= 0; j--) {
-						if (instance.getPayList()[j].productId === $scope.datas[i].productId) {
-							$scope.datas[i].count = instance.getPayList()[j].count;
-							break;
-						}
-					}
-				}
+				$scope.datas = instance.reloadDatas(data.data);
 			}
 		});
 	}
