@@ -1,6 +1,6 @@
 'use strict';
-var myAngularDemo;
-myAngularDemo.AppModule.controller('checkOutCtrl', ['$scope', 'instance', function ($scope, instance) {
+var myNgDemo;
+myNgDemo.CtrlModule.controller('checkOutCtrl', ['$scope', 'instance', function ($scope, instance) {
 	$scope.remove = function(id) {
 		instance.removeItem(id);
 		// $scope.payList.splice(this.$index, 1);
