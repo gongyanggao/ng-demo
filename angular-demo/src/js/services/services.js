@@ -1,5 +1,5 @@
 "use strict";
-myNgDemo.AppModule
+myNgDemo.ServiceModule
     .factory('instance', function() {
         var payList = [];
         return {
