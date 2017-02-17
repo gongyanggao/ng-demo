@@ -1,14 +1,14 @@
-var myAngularDemo;
-! function(myAngularDemo) {
+var myNgDemo;
+! function(myNgDemo) {
 	'use strict';
-	myAngularDemo.CtrlModule = angular.module("myAngularDemo.controllers", []),
-		// myAngularDemo.ServiceModule = angular.module("myAngularDemo.services", []),
-		// myAngularDemo.DirectiveModule = angular.module("myAngularDemo.directives", []),
-		// myAngularDemo.TemplateModule = angular.module("templates", ["ng"]),
-		myAngularDemo.AppModule = angular.module("myAngularDemo", ["ui.router"]);
-	myAngularDemo.AppModule.controller('angularDemoAppCtrl', function($scope, $rootScope) {
+	myNgDemo.CtrlModule = angular.module("myNgDemo.controllers", []),
+		myNgDemo.ServiceModule = angular.module("myNgDemo.services", []),
+		// myNgDemo.DirectiveModule = angular.module("myNgDemo.directives", []),
+		// myNgDemo.TemplateModule = angular.module("templates", ["ng"]),
+		myNgDemo.AppModule = angular.module("myNgDemo", ["myNgDemo.controllers", "myNgDemo.services", "ui.router"]);
+	myNgDemo.AppModule.controller('angularDemoAppCtrl', function($scope, $rootScope) {
 		// TODO
 
 	});
 
-}(myAngularDemo || (myAngularDemo = {}));
+}(myNgDemo || (myNgDemo = {}));
