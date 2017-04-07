@@ -1,0 +1,29 @@
+
+<div class="side-box" ng-class="{true: 'move', false: ''}[expander]">
+	<div class="side-nav">
+	    <div class="side-nav-header" title="selection head">{{head}}</div>
+	    <ul class="side-nav-menu">
+	        <li>
+	            <a ui-sref=".bigData" href="javascript:;" title="Contact Person">
+	                <span class="glyphicon glyphicon-user"></span>
+	                <span class="side-nav-tittle">Contact Person</span>
+	            </a>
+	        </li>
+	        <li>
+	            <a ui-sref=".product" href="javascript:;" title="Home">
+	                <span class="glyphicon glyphicon-home"></span>
+	                <span class="side-nav-tittle">Home</span>
+	            </a>
+	        </li>
+	        <li>
+	            <a ui-sref=".web" href="javascript:;" title="Collection">
+	                <span class="glyphicon glyphicon-star"></span>
+	                <span class="side-nav-tittle">Collection</span>
+	            </a>
+	        </li>
+	    </ul>
+	</div>
+	<a class="sidenav-icon" href="javascript:;">
+	    <i ng-click="expander = !expander" id="sideIcon" class="glyphicon glyphicon-th-list"></i>
+	</a>
+</div>
