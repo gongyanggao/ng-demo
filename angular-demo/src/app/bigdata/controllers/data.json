@@ -1,0 +1,177 @@
+[{
+	"domain": "192.0.0.1",
+	"areaName": "区域1",
+	"nodeName": "节点1",
+	"belongIp": "10.187.64.11",
+	"firstTime": "2014-05-12",
+	"lastTime": "2016-12-01",
+	"status": "未备案"
+}, {
+	"domain": "192.0.0.2",
+	"areaName": "区域2",
+	"nodeName": "节点2",
+	"belongIp": "10.187.64.12",
+	"firstTime": "2014-05-13",
+	"lastTime": "2016-12-02",
+	"status": "未备案"
+}, {
+	"domain": "192.0.0.3",
+	"areaName": "区域3",
+	"nodeName": "节点3",
+	"belongIp": "10.187.64.13",
+	"firstTime": "2014-05-14",
+	"lastTime": "2016-12-03",
+	"status": "未备案"
+}, {
+	"domain": "192.0.0.4",
+	"areaName": "区域4",
+	"nodeName": "节点4",
+	"belongIp": "10.187.64.14",
+	"firstTime": "2014-05-14",
+	"lastTime": "2016-12-04",
+	"status": "未备案"
+}, {
+	"domain": "192.0.0.5",
+	"areaName": "区域5",
+	"nodeName": "节点5",
+	"belongIp": "10.187.64.15",
+	"firstTime": "2014-05-15",
+	"lastTime": "2016-12-05",
+	"status": "未备案"
+}, {
+	"domain": "192.0.0.6",
+	"areaName": "区域6",
+	"nodeName": "节点6",
+	"belongIp": "10.187.64.16",
+	"firstTime": "2014-05-16",
+	"lastTime": "2016-12-06",
+	"status": "未备案"
+}, {
+	"domain": "192.0.0.7",
+	"areaName": "区域7",
+	"nodeName": "节点7",
+	"belongIp": "10.187.64.17",
+	"firstTime": "2014-05-17",
+	"lastTime": "2016-12-07",
+	"status": "未备案"
+}, {
+	"domain": "192.0.0.8",
+	"areaName": "区域8",
+	"nodeName": "节点8",
+	"belongIp": "10.187.64.18",
+	"firstTime": "2014-05-18",
+	"lastTime": "2016-12-08",
+	"status": "未备案"
+}, {
+	"domain": "192.0.0.9",
+	"areaName": "区域9",
+	"nodeName": "节点9",
+	"belongIp": "10.187.64.19",
+	"firstTime": "2014-05-19",
+	"lastTime": "2016-12-09",
+	"status": "未备案"
+}, {
+	"domain": "192.0.0.10",
+	"areaName": "区域10",
+	"nodeName": "节点10",
+	"belongIp": "10.187.64.20",
+	"firstTime": "2014-05-20",
+	"lastTime": "2016-12-10",
+	"status": "未备案"
+}, {
+	"domain": "192.0.0.11",
+	"areaName": "区域11",
+	"nodeName": "节点11",
+	"belongIp": "10.187.64.21",
+	"firstTime": "2014-05-21",
+	"lastTime": "2016-12-11",
+	"status": "未备案"
+}, {
+	"domain": "192.0.0.12",
+	"areaName": "区域12",
+	"nodeName": "节点12",
+	"belongIp": "10.187.64.22",
+	"firstTime": "2014-05-22",
+	"lastTime": "2016-12-12",
+	"status": "未备案"
+}, {
+	"domain": "192.0.0.13",
+	"areaName": "区域13",
+	"nodeName": "节点13",
+	"belongIp": "10.187.64.23",
+	"firstTime": "2014-05-23",
+	"lastTime": "2016-12-13",
+	"status": "未备案"
+}, {
+	"domain": "192.0.0.14",
+	"areaName": "区域14",
+	"nodeName": "节点14",
+	"belongIp": "10.187.64.24",
+	"firstTime": "2014-05-24",
+	"lastTime": "2016-12-14",
+	"status": "未备案"
+}, {
+	"domain": "192.0.0.15",
+	"areaName": "区域15",
+	"nodeName": "节点15",
+	"belongIp": "10.187.64.25",
+	"firstTime": "2014-05-25",
+	"lastTime": "2016-12-15",
+	"status": "未备案"
+}, {
+	"domain": "192.0.0.16",
+	"areaName": "区域16",
+	"nodeName": "节点16",
+	"belongIp": "10.187.64.26",
+	"firstTime": "2014-05-26",
+	"lastTime": "2016-12-16",
+	"status": "未备案"
+}, {
+	"domain": "192.0.0.17",
+	"areaName": "区域17",
+	"nodeName": "节点17",
+	"belongIp": "10.187.64.27",
+	"firstTime": "2014-05-27",
+	"lastTime": "2016-12-17",
+	"status": "未备案"
+}, {
+	"domain": "192.0.0.18",
+	"areaName": "区域18",
+	"nodeName": "节点18",
+	"belongIp": "10.187.64.38",
+	"firstTime": "2014-05-28",
+	"lastTime": "2016-12-18",
+	"status": "未备案"
+}, {
+	"domain": "192.0.0.19",
+	"areaName": "区域19",
+	"nodeName": "节点19",
+	"belongIp": "10.187.64.39",
+	"firstTime": "2014-05-29",
+	"lastTime": "2016-12-19",
+	"status": "未备案"
+}, {
+	"domain": "192.0.0.20",
+	"areaName": "区域20",
+	"nodeName": "节点20",
+	"belongIp": "10.187.64.140",
+	"firstTime": "2014-05-30",
+	"lastTime": "2016-12-20",
+	"status": "未备案"
+}, {
+	"domain": "192.0.0.21",
+	"areaName": "区域21",
+	"nodeName": "节点21",
+	"belongIp": "10.187.64.48",
+	"firstTime": "2014-06-01",
+	"lastTime": "2016-11-11",
+	"status": "未备案"
+}, {
+	"domain": "192.0.0.31",
+	"areaName": "区域31",
+	"nodeName": "节点31",
+	"belongIp": "10.187.64.68",
+	"firstTime": "2014-07-12",
+	"lastTime": "2016-08-14",
+	"status": "未备案"
+}]
