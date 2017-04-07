@@ -1,0 +1,133 @@
+<style type="text/css">
+	.sidenav-icon{
+    width: 70px;
+    height: 70px;
+    margin-left: 255px;
+    transition: margin-left .4s;
+}
+.side-nav.move{
+    width: 100px;
+}
+/*.side-nav a:nth-child(2){
+    display: block;
+}*/
+.side-nav.move a span:nth-child(2){
+    display: none;
+}
+.side-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    background: #212121;
+    overflow: hidden;
+    display: block;
+    box-shadow: 2px 2px 6px rgba(0,0,0,.3);
+    height: 100%;
+    transition: width .4s;
+    font-size: 16px;
+    font-weight: 400;
+    color: #BDBDBD;
+    /*-webkit-transition:width .5s;*/
+}
+.sidenav-icon.move{
+    margin-left: 105px;
+}
+.side-nav .side-nav-header{
+    background: #FF5722;
+    border-bottom: 1px solid #FF7043;
+    color: #FAFAFA;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    padding: 20px 24px 19px;
+    white-space: nowrap;
+}
+@keyframes hehe{
+    from{width: 250px}
+    to{width: 100px;}
+}
+.side-nav.move .side-nav-header{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 72px;
+    white-space: nowrap;
+    animation: hehe .5s;
+}
+.side-nav-menu{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.side-nav-menu a{
+    display: block;
+    height: 56px;
+    padding: 16px 32px;
+    text-decoration: none;
+    color: #BDBDBD;
+    position: relative;
+}
+.side-nav-menu a:hover{
+    background: #616161;
+}
+.side-nav-menu a.active{
+    color: #FAFAFA !important;
+    background: #616161;
+}
+.side-nav-menu .glyphicon{
+    display: block;
+    left: 24px;
+    position: absolute;
+    top: 16px;
+    font-size: 24px;
+}
+.side-nav-tittle{
+    display: block;
+    padding: 0 16px 0 25px;
+}
+.box-trans{
+    width: 200px;
+    height: 200px;
+    margin: 15px auto;
+    background-color: yellow;
+    text-align: center;
+    transition: transform 1s;
+}
+.box-trans:hover{
+    width: 200px;
+    height: 200px;
+    margin: 15px auto;
+    background-color: yellow;
+    text-align: center;
+    transition: transform 1s;
+    transform: rotateX(180deg) rotateY(180deg);
+}
+
+</style>
+<a class="sidenav-icon" href="javascript:;">
+    <i id="btn" class="glyphicon glyphicon-th-list"></i>
+</a>
+<div class="side-nav">
+    <div class="side-nav-header" title="selection head">selection head</div>
+    <ul class="side-nav-menu">
+        <li>
+            <a ui-sref=".bigData" href="javascript:;" title="Contact Person">
+                <span class="glyphicon glyphicon-user"></span>
+                <span class="side-nav-tittle">Contact Person</span>
+            </a>
+        </li>
+        <li>
+            <a ui-sref=".product" href="javascript:;" title="Home">
+                <span class="glyphicon glyphicon-home"></span>
+                <span class="side-nav-tittle">Home</span>
+            </a>
+        </li>
+        <li>
+            <a ui-sref=".web" href="javascript:;" title="Collection">
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="side-nav-tittle">Collection</span>
+            </a>
+        </li>
+    </ul>
+</div>
