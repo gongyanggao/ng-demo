@@ -1,0 +1,125 @@
+.side-box{
+        display: flex;
+    }
+.sidenav-icon{
+    width: 14px;
+    height: 14px;
+    transition: margin-left .4s;
+}
+.side-box.move .side-nav{
+    width: 100px;
+}
+.side-box.move .side-nav a span:nth-child(2){
+    display: none;
+}
+.side-nav{
+    width: 250px;
+    background: #212121;
+    overflow: hidden;
+    display: block;
+    box-shadow: 2px 2px 6px rgba(0,0,0,.3);
+    height: 700px;
+    margin-right: 5px;
+    transition: width .4s;
+    font-size: 16px;
+    font-weight: 400;
+    color: #BDBDBD;
+}
+.side-nav .side-nav-header{
+    background: #FF5722;
+    border-bottom: 1px solid #FF7043;
+    color: #FAFAFA;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    padding: 20px 24px 19px;
+    white-space: nowrap;
+}
+@keyframes expand{
+    from{width: 250px}
+    to{width: 100px;}
+}
+.side-box.move .side-nav-header{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 72px;
+    white-space: nowrap;
+    animation: expand .4s;
+}
+.side-nav-menu{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    text-align: center;
+    position: relative;
+}
+.side-nav-menu a{
+    display: block;
+    height: 56px;
+    text-decoration: none;
+    color: #BDBDBD;
+    position: relative;
+}
+.side-nav-menu li{
+    display: inline-block;
+    width: 250px;
+    height: 56px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 56px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.activeClick {
+    background: #353535;
+}
+.side-nav-menu a.active{
+    color: #FAFAFA !important;
+    background: #616161;
+}
+.side-nav-menu .glyphicon{
+    display: block;
+    left: 24px;
+    position: absolute;
+    top: 16px;
+    font-size: 24px;
+}
+.side-nav-tittle{
+    display: block;
+    padding: 0 16px 0 25px;
+}
+
+/*========== 涟漪 ==========*/
+.ripple {
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  position: absolute;
+  opacity: 1;
+}
+ 
+.rippleEffect {
+  -webkit-animation: rippleDrop .4s linear;
+  animation: rippleDrop .4s linear;
+}
+ 
+@-webkit-keyframes 
+  rippleDrop {  100% {
+   -webkit-transform: scale(2);
+   transform: scale(2);
+   opacity: 0;
+  }
+}
+@keyframes 
+  rippleDrop {  100% {
+   -webkit-transform: scale(2);
+   transform: scale(2);
+   opacity: 0;
+  }
+}
