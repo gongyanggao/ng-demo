@@ -8,13 +8,18 @@
     <meta name="keywords" content=""/>
     <meta name="viewport" content=""/>
 
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap-table.min.css">
+    <link rel="stylesheet" href="/lib/layui/css/layui.css">
+    <link rel="stylesheet" type="text/css" href="./style/main.css">
+
     <!-- project main css files -->
     <script src="/lib/angular/angular.min.js"></script>
     <script src="/lib/angular/angular-ui-router.min.js"></script>
     <script src="/lib/jquery/jquery.min.js"></script>
     <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/lib/layui/css/layui.css">
+    <script src="lib/bootstrap/js/bootstrap-table.min.js"></script>
+    
     <script src="/lib/layui/layui.js"></script>
     <script src="/js/app.js"></script>
     <script src="/js/config/router.config.js"></script>
@@ -22,19 +27,11 @@
 <body ng-controller="angularDemoAppCtrl">
 
 <!-- ====================================================
-================= IE Alert Warning===================
-===================================================== -->
-<!--[if lt IE 8]>
-<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
-    your browser</a> to improve your experience.</p>
-<![endif]-->
-
-
-<!-- ====================================================
 ================= Application Content ===================
 ===================================================== -->
 <div ui-view></div>
 
+<script src="js/directives/sideNav.js"></script>
 <script src="js/services/services.js"></script>
 <script src="app/product/controllers/productCtrl.js"></script>
 <script src="app/product/controllers/checkOutCtrl.js"></script>
